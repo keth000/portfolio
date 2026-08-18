@@ -483,6 +483,12 @@ footer {
     .desktop-nav { display: none; }
     .menu-toggle { display: flex; }
 
+    .card-grid,
+    .two-cols,
+    .skills-wrapper {
+        grid-template-columns: 1fr;
+    }
+
     .hero { min-height: auto; padding-top: 7.5rem; padding-bottom: 3rem; }
     .hero-desc { font-size: 1rem; }
     .hero-actions, .contact-links { flex-direction: column; width: 100%; }
