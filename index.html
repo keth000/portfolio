@@ -13,12 +13,23 @@
     <title>Kethelyn S. Costa | IT Support Specialist & Infrastructure</title>
     <meta name="description"
         content="Suporte Técnico N1/N2 remoto para ambientes globais. Resolução orientada a tickets, análise de logs, documentação técnica e fluência em Inglês (C1).">
+    <meta name="keywords"
+        content="IT Support Specialist remoto, suporte técnico N1 N2, help desk remoto, service desk SLA, troubleshooting Windows, suporte técnico inglês C1, vaga IT support home office">
     <meta name="author" content="Kethelyn Sousa Costa">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ksc-it.vercel.app/">
 
     <meta property="og:title" content="Kethelyn S. Costa | IT Support Specialist">
     <meta property="og:description"
         content="Suporte Técnico Remoto Especializado, Análise de Incidentes, SLAs e Gestão Assíncrona. Inglês C1.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ksc-it.vercel.app/">
+    <meta property="og:locale" content="pt_BR">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Kethelyn S. Costa | IT Support Specialist">
+    <meta name="twitter:description"
+        content="Suporte Técnico Remoto Especializado, Análise de Incidentes, SLAs e Gestão Assíncrona. Inglês C1.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,9 +45,20 @@
       "@type": "Person",
       "name": "Kethelyn Sousa Costa",
       "jobTitle": "IT Support Specialist",
-      "alumniOf": "Universidade Estácio de Sá",
+      "url": "https://ksc-it.vercel.app/",
+      "email": "mailto:kethelyns.ti@gmail.com",
+      "sameAs": ["https://linkedin.com/in/kethelynti"],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Universidade Estácio de Sá"
+      },
       "knowsLanguage": ["Portuguese", "English"],
-      "skills": "IT Support, Remote Troubleshooting, Windows, SLA, Root Cause Analysis"
+      "knowsAbout": ["IT Support", "Remote Troubleshooting", "Windows", "SLA", "Root Cause Analysis", "Service Desk", "Network Fundamentals"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      }
     }
     </script>
 </head>
@@ -46,7 +68,15 @@
     <header class="navbar" id="navbar">
         <div class="nav-content">
             <a href="#hero" class="logo" aria-label="Página inicial">KSC<span class="dot">.</span></a>
-            <nav>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false"
+                aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="desktop-nav">
                 <ul class="nav-links">
                     <li><a href="#about">Metodologia</a></li>
                     <li><a href="#skills">Habilidades</a></li>
@@ -56,6 +86,16 @@
                 </ul>
             </nav>
         </div>
+
+        <nav id="mobile-menu" class="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="#about">Metodologia</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#education">Credenciais</a></li>
+                <li><a href="#contact" class="btn-nav">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -215,7 +255,7 @@
                     <a href="mailto:kethelyns.ti@gmail.com" class="btn btn-secondary" rel="noopener noreferrer">
                         Enviar E-mail Direto
                     </a>
-                    
+
                     <a href="https://linkedin.com/in/kethelynti" target="_blank" class="btn btn-primary"
                         rel="noopener noreferrer">
                         Perfil no LinkedIn

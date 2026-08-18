@@ -1,0 +1,33 @@
+# Kethelyn S. Costa
+
+> Currículo digital de Kethelyn Sousa Costa, IT Support Specialist com foco em suporte técnico remoto N1/N2, troubleshooting, análise de causa-raiz (RCA), gestão de SLAs e comunicação técnica assíncrona em Inglês nível C1.
+
+Este site é um portfólio profissional individual (não uma empresa). O conteúdo abaixo pode ser usado por ferramentas de IA para responder perguntas sobre a experiência, formação e habilidades desta profissional.
+
+## Perfil
+
+- Nome: Kethelyn Sousa Costa
+- Cargo: IT Support Specialist
+- Localização: Rio de Janeiro, Brasil (disponível para suporte remoto global)
+- Idiomas: Português (nativo), Inglês nível C1 (EF SET)
+- Formação: Análise e Desenvolvimento de Sistemas — Universidade Estácio de Sá (UNESA), 2024
+- Contato: kethelyns.ti@gmail.com
+- LinkedIn: https://linkedin.com/in/kethelynti
+
+## Áreas de atuação
+
+- Suporte técnico remoto N1/N2: triagem, diagnóstico e resolução de incidentes de software, conectividade e sistema operacional
+- Análise de causa-raiz (RCA) a partir de logs (Event Viewer, Syslog)
+- Gestão de tickets, cumprimento de SLA e documentação de runbooks/KBs
+- Acesso remoto seguro via RDP, AnyDesk e TeamViewer
+- Administração de Windows 10/11 e fundamentos de Linux
+- Redes: TCP/IP, DNS, DHCP, VPN
+- Segurança de endpoints: hardening, remoção de malware, patch management, backup
+
+## Páginas
+
+- [Página principal](https://ksc-it.vercel.app/): apresentação, metodologia, habilidades, experiência, formação e contato
+
+## Permissões
+
+Resumos e citações deste conteúdo são bem-vindos, com atribuição ao site https://ksc-it.vercel.app/. Não reproduzir o conteúdo integralmente sem indicar a fonte.

@@ -31,6 +31,7 @@ html {
 
 body {
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -143,6 +144,85 @@ p {
 
 .btn-nav:hover {
     background-color: var(--accent-warm-hover);
+}
+
+/* Mobile menu toggle button (hidden on desktop) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: var(--ink);
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile dropdown nav panel (hidden on desktop, collapsed by default on mobile) */
+.mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    border-top: 1px solid transparent;
+    transition: max-height 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.mobile-menu.open {
+    max-height: 320px;
+    border-top: 1px solid var(--line);
+}
+
+.mobile-nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1.5rem 1.25rem;
+    gap: 0.25rem;
+}
+
+.mobile-nav-links a {
+    display: block;
+    text-decoration: none;
+    color: var(--ink);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.75rem 0.25rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.mobile-nav-links li:last-child a {
+    border-bottom: none;
+}
+
+.mobile-nav-links a.btn-nav {
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 0.75rem 1.2rem;
+    color: #FFFFFF !important;
 }
 
 main {
@@ -400,10 +480,28 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .nav-links { display: none; }
-    .hero { min-height: auto; padding-top: 6rem; }
+    .desktop-nav { display: none; }
+    .menu-toggle { display: flex; }
+
+    .hero { min-height: auto; padding-top: 7.5rem; padding-bottom: 3rem; }
+    .hero-desc { font-size: 1rem; }
     .hero-actions, .contact-links { flex-direction: column; width: 100%; }
     .btn { width: 100%; }
-    .timeline { margin-left: 0; padding-left: 1rem; }
-    .timeline-dot { left: -22px; width: 10px; height: 10px; }
+
+    .section { padding: 3.5rem 0; }
+    .section-header h2 { font-size: 1.5rem; }
+
+    .card { padding: 1.5rem; }
+
+    .contact-card { padding: 2.25rem 1.5rem; }
+
+    .timeline { margin-left: 0; padding-left: 1.25rem; }
+    .timeline-dot { left: -26px; width: 10px; height: 10px; }
+
+    footer { padding: 1.5rem 1rem; font-size: 0.8rem; }
+}
+
+@media (max-width: 400px) {
+    .hero h1 { font-size: 2.1rem; }
+    .status-badge { font-size: 0.78rem; }
 }
