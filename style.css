@@ -146,7 +146,6 @@ p {
     background-color: var(--accent-warm-hover);
 }
 
-/* Mobile menu toggle button (hidden on desktop) */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -183,7 +182,6 @@ p {
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Mobile dropdown nav panel (hidden on desktop, collapsed by default on mobile) */
 .mobile-menu {
     max-height: 0;
     overflow: hidden;
