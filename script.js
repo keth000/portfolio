@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, { passive: true });
 
-    // Mobile menu toggle
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
 
@@ -26,12 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         menuToggle.addEventListener('click', toggleMenu);
 
-        // Close the menu whenever a link inside it is tapped
         mobileMenu.querySelectorAll('a').forEach((link) => {
             link.addEventListener('click', closeMenu);
         });
 
-        // Close the menu if the viewport grows back to desktop size
         window.addEventListener('resize', () => {
             if (window.innerWidth > 768) {
                 closeMenu();
