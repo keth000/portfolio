@@ -58,4 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    const user = "kethelyns.ti";
+    const domain = "gmail.com";
+    const emailBtn = document.getElementById("email-link");
+        emailBtn.setAttribute("href", "mailto:" + user + "@" + domain);
+    
 });
